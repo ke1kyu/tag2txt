@@ -5,7 +5,7 @@ function get_text() {
     for (let tag of extract_tags) {
         const tags = document.getElementsByTagName(tag);
         for (let i = 0; i < tags.length; i++) {
-            text += tags[i].textContent + '\n';
+            text += tags[i].textContent.trim() + '\n';
         }
     }
     return text;
