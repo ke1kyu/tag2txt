@@ -7,6 +7,7 @@ function get_text() {
         for (let i = 0; i < tags.length; i++) {
             text += tags[i].textContent.trim() + '\n';
         }
+        text += '\n';
     }
     return text;
 }
