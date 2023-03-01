@@ -3,6 +3,7 @@ function get_text() {
     const extract_tags = ['h1', 'h2', 'h3', 'p']; // 入手したいタグ
     let text = '';
     for (let tag of extract_tags) {
+        text += '<' + tag + '>\n';
         const tags = document.getElementsByTagName(tag);
         for (let i = 0; i < tags.length; i++) {
             text += tags[i].textContent.trim() + '\n';
